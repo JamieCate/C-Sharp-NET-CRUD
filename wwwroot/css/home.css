@@ -35,3 +35,27 @@
 body > div.row.offers-section > div > div > div > p.mt-2 {
     margin-bottom: 2px;
 }
+
+.slick-next {
+    right: 0px !important;
+    z-index: 1;
+    background: black!important;
+    top: 37%!important;
+}
+
+.slick-prev {
+    left: 0px !important;
+    z-index: 1;
+    top: 37% !important;
+}
+
+.slider-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autoplay {
+    max-width: 1280px!important;
+}
