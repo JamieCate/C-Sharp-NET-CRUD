@@ -36,26 +36,71 @@ body > div.row.offers-section > div > div > div > p.mt-2 {
     margin-bottom: 2px;
 }
 
-.slick-next {
+.slick-next:before {
     right: 0px !important;
     z-index: 1;
-    background: black!important;
+    color: black!important;
     top: 37%!important;
+}
+
+.slick-prev:before {
+    left: 0px !important;
+    z-index: 1;
+    top: 37% !important;
+    color: black !important;
 }
 
 .slick-prev {
     left: 0px !important;
     z-index: 1;
-    top: 37% !important;
+}
+
+.slick-next {
+    right: 0px!important;
 }
 
 .slider-container {
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .autoplay {
-    max-width: 1280px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.carousel-slider-img {
+    align-items: center;
+    justify-content: center;
+    display: flex!important;
+    flex-direction: column;
+}
+
+.test-container {
+    display: flex;
+    justify-content: center;
+}
+
+.responsive {
+    margin: 0 16%;
+}
+
+.bino-img {
+    min-height: 206px;
+    max-width: 206px;
+}
+
+.offer-btn-container {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.offers-button {
+    background-color: #00934d;
+    color: white;
+    padding: 10px;
+    width: 15%;
 }

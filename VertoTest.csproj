@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <None Include="wwwroot\css\nav.css" />
+    <None Include="wwwroot\Images\Bino1.PNG" />
+    <None Include="wwwroot\Images\bino2.PNG" />
+    <None Include="wwwroot\Images\bino3.PNG" />
+    <None Include="wwwroot\Images\bino4.PNG" />
   </ItemGroup>
 
 </Project>
