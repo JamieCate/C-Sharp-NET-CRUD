@@ -1,4 +1,9 @@
-﻿<head>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
@@ -12,33 +17,28 @@
 
 @model VertoTest.Models.TopHomeImageTextModel
 
+
+
+
 <h1 class="text-center">@ViewData["Title"]</h1>
 
-<form  method="post">
-    
+<form method="post">
 
-<div class="container">
 
-    <h4>Which image description would you like to change?</h4>
+    <div class="container">
 
-        <select name="Id" class="form-select" aria-label="Default select example">
-            <option value="">Select image (In order from left to right) to edit</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
+        <h4 class="text-center">Edit Home Image Text</h4>
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="ImageTitle" />
 
-<h4 class="text-center">Edit Home Image Text</h4>
-    <label class="form-label">Title</label>
-    <input type="text" class="form-control" asp-for="ImageTitle" />
+        <h4 class="text-center">Edit Home Image Description</h4>
+        <label class="form-label">Descritption</label>
+        <input type="text" class="form-control" asp-for="ImageDescription" />
 
-    <h4 class="text-center">Edit Home Image Description</h4>
-    <label class="form-label">Descritption</label>
-    <input type="text" class="form-control" asp-for="ImageDescription" />
+            <button type="submit" class="btn btn-primary">Save</button>
 
-        <input type="hidden" asp-for="Id" />
+          
 
-    <button type="submit" class="btn btn-primary">Save</button>
-</div>
+    </div>
 
 </form>

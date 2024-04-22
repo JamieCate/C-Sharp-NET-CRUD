@@ -24,3 +24,33 @@
 ul {
     margin-left: 0px!important;
 }
+
+/*Footer styles*/
+
+footer {
+    background-color: rgb(188, 189, 191);
+    padding: 60px 0 30px 0!important;
+}
+.footer-con {
+    padding: 60px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+}
+
+.footer-content {
+    color: white;
+}
+
+h4 > i {
+    padding-left: 20px;
+}
+
+.b-right {
+    border-right: 2px solid #808184;
+    padding: 0 20px 0 20px;
+}
+
+.contact-info {
+    padding-right: 0px!important;
+}

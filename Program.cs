@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using VertoTest.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<VertoTestContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("VertoTestContext") ?? throw new InvalidOperationException("Connection string 'VertoTestContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

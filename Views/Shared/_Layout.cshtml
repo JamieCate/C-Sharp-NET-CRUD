@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/nav.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/VertoTest.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header style="padding-top: 43px" class="bg-light nav-head">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container d-block nav-container">
                 <div class="p-2 column small-6 large-8">
-                    <a class="navbar-brand" href="#"><img src="https://www.opticron.co.uk/images/header-logo.png" alt="Opticron" /></a>
+                    <a asp-controller="Home" asp-action="Index"><img src="https://www.opticron.co.uk/images/header-logo.png" alt="Opticron" /></a>
                     </div>
                 <div class="mt-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +37,7 @@
                                 <a class="nav-link" href="#">Help & Support</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">My Opticron</a>
+                                <a class="nav-link" asp-controller="TopHomeImage" asp-action="Add">My Opticron</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0 d-flex">
@@ -58,9 +60,23 @@
         </main>
     </div>
 
-    <footer class="">
-        <div class="container">
-            &copy; 2024 - VertoTest - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="row grid-x footer-content">
+            <div class="column small-12 large-8">
+
+                <p><strong>Opticron</strong> Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4 8EF, UK</p>
+                <p>Site map / Terms / Privacy Policy / Site By Verto</p>
+
+            </div>
+
+            <div class="grid-x column small-12 large-4 contact-info">
+                <div class="right text-center  " style="width: 100%; display: block;">
+                    <h3>Call <strong>01582 726522</strong></h3>
+                    <h4><strong>email us </strong>sales@opticron.co.uk</h4>
+                    <h4><i class="fa-brands fa-facebook-f b-right"></i><i class="fa-brands fa-twitter b-right"></i><i class="fa-brands fa-square-instagram b-right"></i><i class="fa-brands fa-youtube b-right"></i><i class="fa-solid fa-g"></i></h4>
+                </div>
+            </div>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

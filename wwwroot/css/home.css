@@ -104,3 +104,9 @@ body > div.row.offers-section > div > div > div > p.mt-2 {
     padding: 10px;
     width: 15%;
 }
+
+@media(max-width: 540px) {
+    .offers-button {
+        width: 100px!important;
+    }
+}
